@@ -13,9 +13,13 @@
             <h3>ID PW 입력</h3>
             <input type="text" id="id" minlength="4" maxlength="12" required placeholder="id(4자리이상,12자리이하)">
             <br>
-            <input type="password" id="pw" minlength="4" maxlength="12" required placeholder="pw(4자리이상,12자리이하)">
+            <!--pw에"최소 8자리에서 최대 16자리까지 숫자, 영문, 특수문자 각 1개 이상 포함  ------------------------>
+            <input type="password" id="pw"pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$"
+            minlength="8" maxlength="16" required placeholder="pw(8자리이상,16자리이하 숫자,영문,특수문자 각1개 이상 포함)"style="width:400px">
             <br>
-            <input type="password" id="pw_re" minlength="4" maxlength="12" required placeholder="pw재입력">
+            <!--pw에"최소 8자리에서 최대 16자리까지 숫자, 영문, 특수문자 각 1개 이상 포함  ------------------------>
+            <input type="password" id="pw_re"pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$"
+            minlength="8" maxlength="16" required placeholder="pw재입력"style="width:400px">
             <br>
             <h4>개인정보</h4>
             <input type="text" id="user_name" minlength="4" maxlength="12" required placeholder="이름">
